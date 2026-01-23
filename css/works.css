@@ -928,7 +928,7 @@ nav ul li a.active {
     font-weight: 600;
     cursor: pointer;
     transition: all 0.3s ease;
-    display: inline-flex;
+    display: flex;
     align-items: center;
     gap: 0.7rem;
     text-decoration: none;
@@ -1002,25 +1002,32 @@ nav ul li a.active {
         font-size: 0.9rem;
     }
 }
-@media (max-width: 1024px) {
-    .template-card:hover .template-overlay {
-        opacity: 0;
-    }
-    
-    .template-card:hover .template-preview img {
-        transform: scale(1);
-    }
-    
+
+@media (max-width: 768px) {
     .template-card:hover {
-        transform: translateY(0);
+        transform: none;
         box-shadow: 0 5px 25px rgba(0, 0, 0, 0.1);
     }
-    
-    .template-card.active .template-overlay {
-        opacity: 1;
+
+    .template-card:hover .template-preview img {
+        transform: none;
     }
-    
-    .template-card.active .template-preview img {
-        transform: scale(1.05);
+
+    .template-overlay {
+        opacity: 1 !important;
+        background: none !important;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        pointer-events: none;
+    }
+
+    .template-overlay .template-btn {
+        pointer-events: auto;
     }
 }
