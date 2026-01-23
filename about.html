@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Me - Portfolio</title>
+    <script src="js/main.js"></script>
+    <script src="js/home.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="stylesheet" type="text/css" href="css/about.css">
+
+</head>
+
+<body>
+    <div class="background-shapes">
+        <div class="shape shape-1"></div>
+        <div class="shape shape-2"></div>
+        <div class="shape shape-3"></div>
+        <div class="shape shape-4"></div>
+        <div class="shape shape-5"></div>
+        <div class="shape shape-6"></div>
+    </div>
+
+    <nav>
+        <div class="nav-container">
+            <div class="nav-logo">
+                <a href="index.html"><img src="assets/k_logo.png" alt=""></a>
+            </div>
+            <div class="burger-menu" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <ul id="navMenu">
+                <li><a href="index.html" onclick="setActive(this); closeMenu(); return false;"><i
+                            class="fas fa-arrow-left"></i> Home</a></li>
+                <li><a href="about.html" class="active" onclick="setActive(this); closeMenu(); return false;">About
+                        me</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <section class="about-hero">
+        <div class="about-hero-content">
+            <h1>Hi, I'm <span class="highlight">Kat!</span></h1>
+            <p class="tagline">
+                I'm Katleen Jade Olaguer, an Information Technology student from Pamantasan ng Lungsod ng Valenzuela,
+                passionate about crafting meaningful and visually engaging digital experiences.
+            </p>
+            <div class="scroll-indicator">
+                <span>↓</span>
+            </div>
+        </div>
+    </section>
+
+    <section class="skills-section skill2">
+        <div class="skills-container">
+            <div class="skills-header scroll-animate">
+                <h2>My <span class="highlight">Skills</span></h2>
+            </div>
+
+            <div class="skills-icons">
+                <div class="skill-item scroll-animate-scale" style="transition-delay: 0.1s">
+                    <div class="skill-icon">
+                        <i class="fab fa-html5"></i>
+                    </div>
+                    <span class="skill-name">HTML</span>
+                </div>
+                <div class="skill-item scroll-animate-scale" style="transition-delay: 0.2s">
+                    <div class="skill-icon">
+                        <i class="fab fa-css3-alt"></i>
+                    </div>
+                    <span class="skill-name">CSS</span>
+                </div>
+                <div class="skill-item scroll-animate-scale" style="transition-delay: 0.3s">
+                    <div class="skill-icon">
+                        <i class="fab fa-js"></i>
+                    </div>
+                    <span class="skill-name">JavaScript</span>
+                </div>
+                <div class="skill-item scroll-animate-scale" style="transition-delay: 0.4s">
+                    <div class="skill-icon">
+                        <i class="fab fa-figma"></i>
+                    </div>
+                    <span class="skill-name">Figma</span>
+                </div>
+                <div class="skill-item scroll-animate-scale" style="transition-delay: 0.5s">
+                    <div class="skill-icon">
+                        <i class="fa-solid fa-palette"></i>
+                    </div>
+                    <span class="skill-name">Canva</span>
+                </div>
+            </div>
+
+            <div class="cv-button-container scroll-animate" style="transition-delay: 0.6s">
+                <a href="assets/Katleen_Olaguer-Resume.pdf" target="_blank" rel="noopener noreferrer" class="btn-cv">
+                    <i class="fas fa-download"></i>
+                    Download CV
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <section class="skills-section">
+        <div class="skills-container">
+            <h2 class="section-title scroll-animate">What I Do</h2>
+            <div class="skills-grid">
+                <div class="skill-card scroll-animate-left" style="transition-delay: 0.1s">
+                    <div class="skill-icon"><i class="fa-solid fa-window-maximize"></i></div>
+                    <h3 class="skill-title">Front-End Web Development</h3>
+                    <p class="skill-description">
+                        Building responsive and user-friendly websites using HTML, CSS, and JavaScript
+                    </p>
+                </div>
+                <div class="skill-card scroll-animate" style="transition-delay: 0.2s">
+                    <div class="skill-icon"><i class="fas fa-palette"></i></div>
+                    <h3 class="skill-title">UI/UX Design</h3>
+                    <p class="skill-description">
+                        Designing intuitive interfaces and prototypes using Figma and Canva
+                    </p>
+                </div>
+                <div class="skill-card scroll-animate-right" style="transition-delay: 0.3s">
+                    <div class="skill-icon"><i class="fas fa-lightbulb"></i></div>
+                    <h3 class="skill-title">Prototype Development</h3>
+                    <p class="skill-description">
+                        Transforming ideas into interactive mockups before implementation
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="internship-section">
+        <div class="internship-container">
+            <h2 class="section-title scroll-animate">Internship Highlight</h2>
+            <div class="internship-card scroll-animate-scale">
+                <div class="internship-icon"><i class="fas fa-briefcase"></i></div>
+                <h3 class="internship-title">Web Developer Intern</h3>
+                <p class="internship-company">ABIVA Publishing House Inc.</p>
+                <p class="internship-description">
+                    I worked as a Web Developer Intern at ABIVA Publishing House Inc.,
+                    where I focused on enhancing my web development skills by completing
+                    assessment tasks and submitting them to my seniors for quality review.
+                    This experience taught me the importance of writing clean code, following
+                    standards, and ensuring my work met professional expectations.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <section class="closing-section">
+        <div class="closing-container">
+            <div class="closing-content scroll-animate">
+                <span class="closing-emoji"><i class="fa-solid fa-wand-sparkles"></i></span>
+                <p>
+                    I'm always eager to learn, create, and explore new challenges that help bridge design and
+                    technology.
+                    Let's connect and create something amazing together!
+                </p>
+                <a href="index.html#contact" class="cta-button">Let's Work Together</a>
+            </div>
+        </div>
+    </section>
+
+    <script>
+        const scrollObserverOptions = {
+            threshold: 0.15,
+            rootMargin: '0px 0px -100px 0px'
+        };
+
+        const scrollObserver = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('animate-in');
+                    scrollObserver.unobserve(entry.target);
+                }
+            });
+        }, scrollObserverOptions);
+
+        document.addEventListener('DOMContentLoaded', () => {
+            const animateElements = document.querySelectorAll(
+                '.scroll-animate, .scroll-animate-left, .scroll-animate-right, .scroll-animate-scale'
+            );
+
+            animateElements.forEach(el => {
+                scrollObserver.observe(el);
+            });
+        });
+    </script>
+
+</body>
+
+</html>

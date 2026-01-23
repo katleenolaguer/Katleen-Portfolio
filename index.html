@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio - Home</title>
+    <link rel="stylesheet" type="text/css" href="css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <script src="js/script-home.js"></script>
+</head>
+
+<body>
+    <div class="background-shapes">
+        <div class="shape shape-1"></div>
+        <div class="shape shape-2"></div>
+        <div class="shape shape-3"></div>
+        <div class="shape shape-4"></div>
+        <div class="shape shape-5"></div>
+        <div class="shape shape-6"></div>
+    </div>
+
+    <nav id="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <a href="index.html"><img src="assets/k_logo.png" alt=""></a>
+            </div>
+            <div class="burger-menu" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <ul id="navMenu">
+                <li><a href="#home1" onclick="setActive(this); closeMenu(); return false;">Home</a></li>
+                <li><a href="#about2" onclick="setActive(this); closeMenu(); return false;">About Me</a></li>
+                <li><a href="#internship" onclick="setActive(this); closeMenu(); return false;">Internship</a></li>
+                <li><a href="#works" onclick="setActive(this); closeMenu(); return false;">Projects</a></li>
+                <li><a href="#contact" onclick="setActive(this); closeMenu(); return false;">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <section class="hero" id="home1">
+        <div class="hero-content">
+            <div class="hero-text">
+                <h1>Katleen Jade Olaguer</h1>
+                <p class="subtitle">Student</p>
+                <p class="course">Bachelor of Science in Information Technology 4th Year</p>
+
+                <div class="cta-buttons">
+                    <a href="#works" class="btn btn-primary">View My Projects</a>
+                    <a href="assets/Katleen_Olaguer-Resume.pdf" target="_blank" rel="noopener noreferrer"
+                        class="btn btn-secondary">
+                        Download CV
+                    </a>
+                </div>
+            </div>
+            <div class="hero-photo">
+                <div class="photo-placeholder">
+                    <img src="assets/katt.jpg" alt="">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="about-summary" id="about2">
+        <div class="about-container">
+            <div class="about-header">
+                <h2>Hi, I'm <span class="highlight">Kat!</span></h2>
+            </div>
+            <div class="about-content">
+                <div class="about-card">
+                    <div class="card-icon"><i class="fas fa-laptop-code"></i></div>
+                    <p>I'm a passionate <strong>Web Developer</strong> and <strong>UI/UX Designer</strong> from
+                        Pamantasan ng Lungsod ng Valenzuela.</p>
+                </div>
+                <div class="about-card">
+                    <div class="card-icon"><i class="fas fa-palette"></i></div>
+                    <p>I specialize in creating responsive, user-friendly websites and intuitive digital designs using
+                        <strong>HTML, CSS, JavaScript,</strong> and <strong>Figma</strong>.
+                    </p>
+                </div>
+
+                <div class="about-card">
+                    <div class="card-icon"><i class="fas fa-lightbulb"></i></div>
+                    <p>I blend creativity and code to build engaging online experiences.</p>
+                </div>
+            </div>
+
+            <div class="internship-cta">
+                <a href="about.html" class="btn">
+                    Read More <i class="fas fa-arrow-right"></i>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <section class="internship-section" id="internship">
+        <div class="internship-container">
+            <div class="section-header">
+                <h2>My <span class="highlight">Internship</span></h2>
+            </div>
+
+            <div class="internship-content">
+                <div class="internship-info">
+                    <div class="internship-badge">
+                        <i class="fas fa-briefcase"></i>
+                        Professional Experience
+                    </div>
+
+                    <h3 class="internship-title">Web Developer Intern</h3>
+                    <p class="company-name"><i class="fas fa-building"></i> Abiva Publishing House Inc.</p>
+                    <div class="duration">
+                        <i class="fas fa-calendar-alt"></i>
+                        <span>August 2025 – December 2025</span>
+                    </div>
+
+                    
+                    <div class="internship-highlights">
+                        <div class="highlight-item">
+                            <i class="fas fa-code"></i>
+                            <span>Developed interactive quizzes and assessments</span>
+                        </div>
+                        <div class="highlight-item">
+                            <i class="fas fa-tasks"></i>
+                            <span>Followed professional workflow standards</span>
+                        </div>
+                        <div class="highlight-item">
+                            <i class="fas fa-check-circle"></i>
+                            <span>Refined code through QA evaluations</span>
+                        </div>
+                    </div>
+
+                    <div class="internship-cta">
+                        <a href="internship.html" class="btn">
+                            Learn More <i class="fas fa-arrow-right"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="internship-visual">
+
+
+                    <div class="stats-grid">
+                        <div class="stat-card">
+                            <i class="fas fa-project-diagram"></i>
+                            <div class="stat-number">Multiple</div>
+                            <div class="stat-label">Tasks Completed</div>
+                        </div>
+                        <div class="stat-card">
+                            <i class="fas fa-clock"></i>
+                            <div class="stat-number">4</div>
+                            <div class="stat-label">Months</div>
+                        </div>
+                        <div class="stat-card">
+                            <i class="fas fa-laptop-code"></i>
+                            <div class="stat-number">UI/UX</div>
+                            <div class="stat-label">Skills Enhanced</div>
+                        </div>
+                       
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="works-preview" id="works">
+        <div class="works-preview-container">
+            <div class="section-header">
+                <h2>Featured <span class="highlight">Projects</span></h2>
+                <p class="section-subtitle">Check out some of my recent projects</p>
+            </div>
+
+            <div class="preview-grid">
+                <div class="preview-card">
+                    <div class="preview-image">
+                        <img src="assets/rumini-web1.png" alt="Rumini Promotional Website">
+                        <div class="preview-overlay">
+                        </div>
+                    </div>
+                    <div class="preview-info">
+                        <h3 class="preview-title">Rumini - Promotional Website</h3>
+                        <p class="preview-description">A public website introducing Rumini and guiding users to the mobile app.
+                            functionality.</p>
+                        <div class="preview-tech">
+                            <span class="tech-badge">HTML</span>
+                            <span class="tech-badge">CSS</span>
+                            <span class="tech-badge">JavaScript</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="preview-card">
+                    <div class="preview-image">
+                        <img src="assets/rumini.png" alt="Rumini Admin Side">
+                        <div class="preview-overlay">
+
+                        </div>
+                    </div>
+                    <div class="preview-info">
+                        <h3 class="preview-title">Rumini - Admin Side</h3>
+                        <p class="preview-description">A web dashboard for managing students, counseling data, and mood reports.
+                        </p>
+                        <div class="preview-tech">
+                            <span class="tech-badge">Flutter</span>
+                            <span class="tech-badge">Dart</span>
+                            <span class="tech-badge">Firebase</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="preview-card">
+                    <div class="preview-image">
+                        <img src="assets/app-ss3.png" alt="Rumini App">
+                        <div class="preview-overlay">
+
+                        </div>
+                    </div>
+                    <div class="preview-info">
+                        <h3 class="preview-title">Rumini - App</h3>
+                        <p class="preview-description">Android app for mood tracking, emotion logging, and managing counseling interactions.</p>
+                        <div class="preview-tech">
+                             <span class="tech-badge">Flutter</span>
+                            <span class="tech-badge">Dart</span>
+                            <span class="tech-badge">Firebase</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="view-all-container">
+                <a href="works.html" class="btn btn-view-all">
+                    View All Projects <i class="fas fa-arrow-right"></i>
+                </a>
+            </div>
+        </div>
+    </section>
+
+
+
+
+    <section class="contact-section" id="contact">
+        <div class="contact-container">
+            <div class="contact-info">
+                <h1>Let's Connect!</h1>
+                <div class="info-cards">
+                    <div class="info-card">
+                        <div class="info-icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <div class="info-details">
+                            <h3>Email</h3>
+                            <p><a href="mailto:katleenolaguer@gmail.com">katleenolaguer@gmail.com</a></p>
+                        </div>
+                    </div>
+
+                    <div class="info-card">
+                        <div class="info-icon">
+                            <i class="fas fa-phone"></i>
+                        </div>
+                        <div class="info-details">
+                            <h3>Phone</h3>
+                            <p><a href="tel:+639760283199">+63 976 028 3199</a></p>
+                        </div>
+                    </div>
+
+                    <div class="info-card">
+                        <div class="info-icon">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <div class="info-details">
+                            <h3>Location</h3>
+                            <p>Valenzuela City, Philippines</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="social-links">
+                    <a href="#" class="social-link" title="LinkedIn">
+                        <i class="fab fa-linkedin-in"></i>
+                    </a>
+                    <a href="https://www.facebook.com/ktlnjdlgr" target="_blank" rel="noopener noreferrer" class="social-link" title="Facebook">
+                        <i class="fab fa-facebook-f"></i>
+                    </a>
+                    <a href="https://www.instagram.com/xaylee__/" class="social-link" target="_blank" rel="noopener noreferrer" title="Instagram">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    
+    <footer>
+        <div class="footer-container">
+            <div class="footer-content">
+                 <div class="footer-logo">
+                    <img src="assets/k_logo.png" alt="Katleen Logo">
+                </div>
+                <div class="contact-links">
+                    <a href="tel:09760283199" class="contact-item">
+                        <i class="fas fa-phone"></i>
+                        <span>Phone</span>
+                    </a>
+                    <a href="mailto:katleenolaguer@gmail.com" class="contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <span>Email</span>
+                    </a>
+                     <a href="https://www.facebook.com/ktlnjdlgr" target="_blank" rel="noopener noreferrer" class="contact-item" title="Facebook">
+                        <i class="fab fa-facebook-f"></i>
+                        <span>Facebook</span>
+                    </a>
+                    <a href="https://www.instagram.com/xaylee__/" class="contact-item" target="_blank" rel="noopener noreferrer" title="Instagram">
+                        <i class="fab fa-instagram"></i>
+                        <span>Instagram</span>
+                    </a>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; 2025 <a href="index.html">Katleen Jade Olaguer</a>. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+
+
+
+</body>
+
+</html>

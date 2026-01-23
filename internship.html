@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Internship - Portfolio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script src="js/main.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/internship.css">
+</head>
+
+<body>
+    <div class="background-shapes">
+        <div class="shape shape-1"></div>
+        <div class="shape shape-2"></div>
+        <div class="shape shape-3"></div>
+        <div class="shape shape-4"></div>
+        <div class="shape shape-5"></div>
+        <div class="shape shape-6"></div>
+    </div>
+
+    <nav>
+        <div class="nav-container">
+            <div class="nav-logo">
+                <a href="index.html"><img src="assets/k_logo.png" alt=""></a>
+            </div>
+            <div class="burger-menu" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <ul id="navMenu">
+                <li><a href="index.html" onclick="setActive(this); closeMenu(); return false;"><i
+                            class="fas fa-arrow-left"></i> Home</a></li>
+                <li><a href="internship.html" class="active"
+                        onclick="setActive(this); closeMenu(); return false;">Internship</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <section class="internship-hero">
+        <div class="hero-content">
+            <div class="hero-badge">
+                <i class="fas fa-star"></i> Professional Experience
+            </div>
+            <h1>Internship Experience</h1>
+            <p class="company-name"><i class="fas fa-building"></i> Abiva Publishing House Inc.</p>
+            <div class="duration">
+                <i class="fas fa-calendar-alt"></i>
+                <span>August 2025 – December 2025</span>
+            </div>
+        </div>
+    </section>
+
+    <section class="company-section">
+        <div class="company-wrapper">
+            <div class="company-content scroll-animate-left">
+                <h2>About the Company</h2>
+                <p>
+                    Founded in <b>1936</b>, <b>Abiva Publishing House Inc.</b> is the
+                    <b>oldest and one of the most respected educational publishers in the Philippines</b>.
+                    For over eight decades, it has stayed true to its mission of
+                    <em>"Helping Teachers Help Their Students."</em>
+                </p>
+                <p>
+                    The company produces <b>textbooks, digital resources, and innovative learning materials</b>
+                    that support learners from preschool to college. It also provides
+                    <b>teacher training, seminars, and workshops</b> to improve educational practices nationwide.
+                </p>
+                <p>
+                    Headquartered in <b>Quezon City</b> with regional offices in <b>Cebu</b> and <b>Davao</b>,
+                    Abiva continues to be a trusted partner of schools and educators across the Philippines.
+                </p>
+
+                <div class="company-info">
+                    <div class="info-box scroll-animate-fade" style="transition-delay: 0.1s">
+                        <i class="fas fa-bullseye"></i>
+                        <div>
+                            <h4>Mission</h4>
+                            <p>To help teachers help their students.</p>
+                        </div>
+                    </div>
+
+                    <div class="info-box scroll-animate-fade" style="transition-delay: 0.2s">
+                        <i class="fas fa-eye"></i>
+                        <div>
+                            <h4>Vision</h4>
+                            <p>
+                                To be the preferred partner in Philippine education through
+                                innovative, high-quality learning materials.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="info-box scroll-animate-fade" style="transition-delay: 0.3s">
+                        <i class="fas fa-globe"></i>
+                        <div>
+                            <h4>Website</h4>
+                            <p>
+                                <a href="https://abiva.com.ph" target="_blank">www.abiva.com.ph</a>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="company-image scroll-animate-right">
+                <img src="assets/abivalogo.jpeg" alt="Abiva Publishing House Logo" />
+            </div>
+        </div>
+    </section>
+
+    <section class="highlights-section">
+        <div class="highlights-container">
+            <h2 class="section-title scroll-animate">Key Responsibilities</h2>
+            <div class="highlights-grid">
+                <div class="highlight-card scroll-animate-scale" style="transition-delay: 0.1s">
+                    <div class="highlight-icon">
+                        <i class="fas fa-code"></i>
+                    </div>
+                    <h3 class="highlight-title">Interactive Development</h3>
+                    <p class="highlight-description">
+                        Developed interactive web-based assessments and math quizzes using
+                        HTML, CSS, and JavaScript, creating engaging learning experiences.
+                    </p>
+                </div>
+                <div class="highlight-card scroll-animate-scale" style="transition-delay: 0.2s">
+                    <div class="highlight-icon">
+                        <i class="fas fa-tasks"></i>
+                    </div>
+                    <h3 class="highlight-title">Template Implementation</h3>
+                    <p class="highlight-description">
+                        Followed structured templates and task guidelines to ensure consistency and quality
+                        across all web components and educational materials.
+                    </p>
+                </div>
+                <div class="highlight-card scroll-animate-scale" style="transition-delay: 0.3s">
+                    <div class="highlight-icon">
+                        <i class="fas fa-check-circle"></i>
+                    </div>
+                    <h3 class="highlight-title">Quality Assurance</h3>
+                    <p class="highlight-description">
+                        Collaborated with senior developers through regular QA evaluations, refining code
+                        quality and adhering to professional workflow standards.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="skills-section">
+        <div class="skills-container">
+            <h2 class="section-title scroll-animate">Technologies Used</h2>
+            <div class="skills-content">
+                <div class="skill-item first scroll-animate-left" style="transition-delay: 0.1s">
+                    <i class="fab fa-html5"></i>
+                    <div class="skill-name">HTML5</div>
+                </div>
+                <div class="skill-item second scroll-animate" style="transition-delay: 0.2s">
+                    <i class="fab fa-css3-alt"></i>
+                    <div class="skill-name">CSS3</div>
+                </div>
+                <div class="skill-item third scroll-animate-right" style="transition-delay: 0.3s">
+                    <i class="fab fa-js"></i>
+                    <div class="skill-name">JavaScript</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="impact-section">
+        <div class="impact-container">
+            <h2 class="section-title scroll-animate">Journey in Progress</h2>
+            <div class="impact-content">
+                <div class="impact-stat scroll-animate-scale" style="transition-delay: 0.1s">
+                    <i class="fas fa-project-diagram"></i>
+                    <div class="impact-number">Multiple</div>
+                    <div class="impact-label">Tasks Completed</div>
+                </div>
+                <div class="impact-stat scroll-animate-scale" style="transition-delay: 0.2s">
+                    <i class="fas fa-clock"></i>
+                    <div class="impact-number">4</div>
+                    <div class="impact-label">Months Experience</div>
+                </div>
+                <div class="impact-stat scroll-animate-scale" style="transition-delay: 0.3s">
+                    <i class="fas fa-chart-line"></i>
+                    <div class="impact-number">UI/UX</div>
+                    <div class="impact-label">Skills Enhanced</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="cta-section">
+        <div class="cta-container">
+            <div class="cta-content scroll-animate">
+                <h2>Want to Learn More?</h2>
+                <p>
+                    Explore my portfolio to see sample projects and web components I've created,
+                    or get in touch to discuss opportunities and collaborations.
+                </p>
+                <div class="cta-buttons">
+                    <a href="works.html" class="btn btn-primary">
+                        <i class="fas fa-folder-open"></i> View My Work
+                    </a>
+                    <a href="index.html#contact" class="btn btn-secondary">
+                        <i class="fas fa-envelope"></i> Contact Me
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script>
+        const scrollObserverOptions = {
+            threshold: 0.15,
+            rootMargin: '0px 0px -100px 0px'
+        };
+
+        const scrollObserver = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('animate-in');
+                    scrollObserver.unobserve(entry.target);
+                }
+            });
+        }, scrollObserverOptions);
+
+        document.addEventListener('DOMContentLoaded', () => {
+            const animateElements = document.querySelectorAll(
+                '.scroll-animate, .scroll-animate-left, .scroll-animate-right, .scroll-animate-scale, .scroll-animate-fade'
+            );
+
+            animateElements.forEach(el => {
+                scrollObserver.observe(el);
+            });
+        });
+    </script>
+
+</body>
+
+</html>
