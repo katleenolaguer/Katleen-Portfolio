@@ -13,7 +13,7 @@ const projects = [
             "assets/rumini-web2.png",
             "assets/rumini-web3.png"
         ],
-        demoUrl: "#"
+        demoUrl: "https://katleenolaguer.github.io/Rumini-Web/"
     },
     {
         title: "Rumini - Admin/Counselors Side",
@@ -260,32 +260,3 @@ document.addEventListener('keydown', function (event) {
 });
 
 
-if (window.innerWidth <= 1024) {
-    const templateCards = document.querySelectorAll('.template-card');
-
-    templateCards.forEach(card => {
-        card.addEventListener('click', function (e) {
-            if (e.target.closest('.template-btn')) {
-                return;
-            }
-
-            e.preventDefault();
-
-            this.classList.toggle('active');
-
-            templateCards.forEach(otherCard => {
-                if (otherCard !== this) {
-                    otherCard.classList.remove('active');
-                }
-            });
-        });
-    });
-
-    document.addEventListener('click', function (e) {
-        if (!e.target.closest('.template-card')) {
-            templateCards.forEach(card => {
-                card.classList.remove('active');
-            });
-        }
-    });
-}
